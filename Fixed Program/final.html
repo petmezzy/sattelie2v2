@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sclorple Norp Nomble!!!!</title>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+        background-image: url('media/space2.gif'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+    }
+    #moving-image {
+        position: absolute;
+    }
+    .portal {
+            width: 300px;
+            height: 300px;
+            background-image: url('media/portal2.gif');
+            background-size: cover;
+            cursor: pointer; 
+        }
+</style>
+</head>
+<body>
+    <a href="index.html">
+        <div class="portal">
+            <img> <portal class="gif"></portal>
+        </div>
+    </a>
+    <audio autoplay loop>
+        <source src="media/megaman9.mp3" type="audio/mpeg">
+    
+    </audio>
+    
+<img id="moving-image" src="media/FarOut.png" alt="Moving Image" width="250" height="250">
+
+<script>
+    window.onload = function() {
+        var image = document.getElementById("moving-image");
+        var screenWidth = window.innerWidth;
+        var screenHeight = window.innerHeight;
+        
+        function moveImage() {
+            var randomX = Math.random() * (screenWidth - image.width);
+            var randomY = Math.random() * (screenHeight - image.height);
+            image.style.left = randomX + "px";
+            image.style.top = randomY + "px";
+        }
+        
+        setInterval(moveImage, 500); 
+    }
+</script>
+<body><a href="index.html"><img src="media/purptal copy.gif" style="position: absolute;left: 20px;middle: 50px;" width="120" height="200"></a></body>
+</body>
+</html> 

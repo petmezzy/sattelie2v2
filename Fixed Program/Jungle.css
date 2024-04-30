@@ -1,0 +1,20 @@
+body {
+    background-image: url('Yungle.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+    #monkey-container img {
+        width: 500px;
+        top: -50px;
+        height: auto;
+        transform: rotateX(180deg);
+
+}
+#giraffe-container {
+    position: fixed;
+    bottom: 0; 
+    left: 70%; 
+    transform: translateX(-70%); 
+    transform: translateY(.5);
+}

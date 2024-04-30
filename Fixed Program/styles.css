@@ -1,0 +1,47 @@
+
+.portal {
+    position: absolute; /* Change position to absolute */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    width: 300px;
+    height: 300px;
+    background-image: url('portal.gif');
+    background-size: cover;
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
+
+.portal-inner {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff; /* White text */
+}
+
+.portal h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portal p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('Jersey 10.ttf'); /* Fix font file path */
+}
+
+div {
+    font-family: myFirstFont;
+}
+
+.portal2 {
+    position: absolute; /* Change position to absolute */
+    bottom: 0; /* Position at the top */
+    right: 0; /* Position at the left */
+    width: 300px;
+    height: 300px;
+    background-image: url('portal.gif');
+    background-size: cover;
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
